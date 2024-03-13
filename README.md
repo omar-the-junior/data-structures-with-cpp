@@ -30,12 +30,15 @@ by Malik, D. S 2nd Edition](https://archive.org/details/datastructuresus0000mali
 ### Using codespaces
 [![Open in GitHub Codespaces](https://img.shields.io/static/v1?style=for-the-badge&label=GitHub+Codespaces&message=Open&color=lightgrey&logo=github)](https://codespaces.new/omar-the-junior/data-structures-with-cpp)
 #### Run the code on codespaces
->[!TIP] You can either the code by clicking the run button on the top right corner or use the <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd> shortcut 
-<video controls src="assets/how to run code.mp4" title="Title"></video>
-
+> [!TIP]
+> You can either run the code by clicking the ▶️ run button on the top right corner or use the <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd> shortcut 
+> <video controls src="https://github.com/omar-the-junior/data-structures-with-cpp/assets/44696488/75cef5fb-857e-4e4d-a27c-4f644977aa0c" title="Title"></video>
 ### Work locally
 1. Clone the repo `git clone https://github.com/omar-the-junior/data-structures-with-cpp`
 2. Open the repo using your favorite editor (VS Code is recommended)
+
+
+
 
 
 ## Get familiar with the repository
