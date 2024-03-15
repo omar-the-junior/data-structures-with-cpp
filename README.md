@@ -49,21 +49,21 @@ File structure would look as follows:
 > [!NOTE]
 > The following file tree is just a demonstration of how the file structure should look.
 ```
-├── 1-chapter_name
-│   ├── concept_name
+├── 1-chapter-name
+│   ├── concept-name
 │   │   ├── include
 │   │   │   └── fileName.h
 │   │   └── src
 │   │       ├── main.cpp
 │   │       └── fileName.cpp
-│   ├── another_concept_name
+│   ├── another-concept-name
 │   │   ├── include
 │   │   │   └── fileName.h
 │   │   └── src
 │   │       ├── main.cpp
 │   │       └── fileName.cpp
-├── 2-chapter_name
-│   ├── concept_name
+├── 2-chapter-name
+│   ├── concept-name
 │   │   ├── include
 │   │   │   └── fileName.h
 │   │   └── src
@@ -73,24 +73,24 @@ File structure would look as follows:
 #### Root Directories
 At the root directory lies a folder for each chapter
 ```
-├── 1-chapter_name
-├── 2-chapter_name
-├── 3-chapter_name
+├── 1-chapter-name
+├── 2-chapter-name
+├── 3-chapter-name
 ```
 Each folder is named with the **chapter number** first, followed by the **chapter name**.
 
 #### Chapters
 Inside Each chapter folders lies a folder for each concept
 ```
-├── 1-chapter_name
-│   ├── concept_name
+├── 1-chapter-name
+│   ├── concept-name
 ```
 
 #### Concepts
 Each concept contains mainly two folders `include` for header files `src` for `.cpp` files
 ```
-├── 1-chapter_name
-│   ├── concept_name
+├── 1-chapter-name
+│   ├── concept-name
 │   │   ├── include
 │   │   │   └── fileName.h
 │   │   └── src
@@ -105,7 +105,7 @@ The `include` folder contains the code **declaration** of a specific `class` or 
 
 #### Code declaration (Header files)
 ```
-├── friend_functions_of_classes
+├── friend-functions-of-classes
 │   ├── include
 │   │   └── classIllusFriend.h
 │   └── src
