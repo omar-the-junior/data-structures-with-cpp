@@ -1,5 +1,3 @@
-// rectangleType.h
-
 #ifndef RECTANGLETYPE_H
 #define RECTANGLETYPE_H
 
@@ -42,4 +40,4 @@ private:
     double length;
     double width;
 };
-#endif // RECTANGLETYPE_H
+#endif

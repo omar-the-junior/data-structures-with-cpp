@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "./classIllusFriend.cpp"
+#include "../include/classIllusFriend.h"
 
 using namespace std;
 

@@ -47,7 +47,7 @@
         "streambuf": "cpp",
         "typeinfo": "cpp"
     },
-    // "code-runner.executorMap": {
-    //     "cpp": "cd $dir && g++ *.cpp -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    // }
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && g++ *.cpp -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    }
 }

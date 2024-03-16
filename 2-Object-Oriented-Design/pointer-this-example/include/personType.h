@@ -1,3 +1,6 @@
+#ifndef H_personType
+#define H_personType
+
 #include <string>
 using namespace std;
 class personType
@@ -16,3 +19,4 @@ private:
     string firstName;
     string lastName;
 };
+#endif

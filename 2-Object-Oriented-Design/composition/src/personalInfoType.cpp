@@ -2,8 +2,8 @@
 #include <string>
 
 #include "../include/personalInfoType.h"
-#include "personType.cpp"
-#include "dateType.cpp"
+#include "../include/personType.h"
+#include "../include/dateType.h"
 
 using namespace std;
 

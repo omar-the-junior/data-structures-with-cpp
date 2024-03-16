@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
-#include "rectangleType.cpp"
-#include "boxType.cpp"
+#include "../include/rectangleType.h"
+#include "../include/boxType.h"
 // ------------------------------------------------ new boxType class ------------------------------------------------
 
 int main()

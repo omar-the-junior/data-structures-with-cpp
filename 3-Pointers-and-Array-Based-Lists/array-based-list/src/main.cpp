@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-#include "./arrayListType.cpp"
+#include "../include/arrayListType.h"
 using namespace std;
 
 int main()

@@ -15,6 +15,9 @@ by Malik, D. S 2nd Edition](https://archive.org/details/datastructuresus0000mali
     - [Using codespaces](#using-codespaces)
       - [Run the code on codespaces](#run-the-code-on-codespaces)
     - [Work locally](#work-locally)
+      - [Code Runner Configuration](#code-runner-configuration)
+        - [Windows Users](#windows-users)
+        - [Linux Users](#linux-users)
   - [Get familiar with the repository](#get-familiar-with-the-repository)
     - [File structure](#file-structure)
       - [Root Directories](#root-directories)
@@ -37,9 +40,28 @@ by Malik, D. S 2nd Edition](https://archive.org/details/datastructuresus0000mali
 1. Clone the repo `git clone https://github.com/omar-the-junior/data-structures-with-cpp`
 2. Open the repo using your favorite editor (VS Code is recommended)
 
+#### Code Runner Configuration
 
+To avoid linker errors by compiling all `.cpp` files in the `src` folder, it's crucial to set up the `executorMap` in the Code Runner extension settings. This can be done in the `.vscode/settings.json` file in your workspace.
 
+##### Windows Users
 
+If you're using Windows, use the following `executorMap` in [the workspace settings](./.vscode/settings.json):
+
+```json
+"code-runner.executorMap": {
+  "cpp": "cd $dir && g++ *.cpp -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+}
+```
+##### Linux Users
+
+If you're using Linux, use the following executorMap in [the workspace settings](./.vscode/settings.json):
+
+```json
+"code-runner.executorMap": {
+  "cpp": "cd $dir && mkdir -p bin && g++ *.cpp -o bin/$fileNameWithoutExt && $dirbin/$fileNameWithoutExt",
+}
+```
 
 ## Get familiar with the repository
 
@@ -190,31 +212,6 @@ void friendFunc(classIllusFriend cIFObject)
 }
 ```
 
-> [!TIP]
-> When using this code in the `main.cpp` include the .cpp file directly as follows
-> ```cpp 
-> #include <iostream>
-> #include <string>
-> 
-> #include "./classIllusFriend.cpp" // include the definition file directly
-> 
-> using namespace std;
-> 
-> int main()
-> {
->     classIllusFriend aObject;
-> 
->     aObject.setX(32);
-> 
->     cout << "Line 15: aObject.x: ";
->     aObject.print();
->     cout << endl;
-> 
->     cout << "*~*~*~* Testing friend function *~*~*~*" << endl
->          << endl;
-> 
->     friendFunc(aObject);
-> 
->     return 0;
-> }
->```
+> [!WARNING]
+> When writing template classes or functions, the declaration and definition should be in the same file. This is because the compiler needs to see the entire template definition at the point of instantiation.
+

@@ -1,3 +1,6 @@
+#ifndef H_boxType
+#define H_boxType
+
 #include "./rectangleType.h"
 // Methods Declarations
 class boxType : public rectangleType
@@ -33,3 +36,4 @@ public:
 private:
     double height;
 };
+#endif

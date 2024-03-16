@@ -1,5 +1,5 @@
 #include <iostream>
-#include "personalInfoType.cpp"
+#include "../include/personalInfoType.h"
 
 int main()
 {
