@@ -16,17 +16,20 @@
 				"formulahendry.code-runner",
 				"christian-kohler.path-intellisense",
 				"Equinusocio.vsc-material-theme",
-				"PKief.material-icon-theme"
+				"PKief.material-icon-theme",
+				"GitHub.vscode-pull-request-github"
 			],
 			"settings": {
 				"files.autoSave": "onFocusChange",
 				"code-runner.executorMap": {
-					"c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-					"cpp": "cd $dir && mkdir -p bin && g++ $fileName -o bin/$fileNameWithoutExt && $dirbin/$fileNameWithoutExt",
+					"cpp": "cd $dir && mkdir -p bin && g++ *.cpp -o bin/$fileNameWithoutExt && $dirbin/$fileNameWithoutExt",
 				},
 				"workbench.colorTheme": "Material Theme Ocean",
-				"workbench.iconTheme": "material-icon-theme"
-			}
+				"workbench.iconTheme": "material-icon-theme",
+				"code-runner.runInTerminal": true,
+				"code-runner.saveAllFilesBeforeRun": true,
+				"code-runner.ignoreSelection": true
+			},
 		}
 	}
 	// Features to add to the dev container. More info: https://containers.dev/features.
