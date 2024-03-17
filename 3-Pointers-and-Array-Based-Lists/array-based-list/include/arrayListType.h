@@ -210,6 +210,7 @@ const arrayListType<elemType> &arrayListType<elemType>::operator=(const arrayLis
         for (int i = 0; i < length; i++)
             list[i] = otherList.list[i];
     }
+    return *this;
 }
 
 // The function seqSearch is O(n)
