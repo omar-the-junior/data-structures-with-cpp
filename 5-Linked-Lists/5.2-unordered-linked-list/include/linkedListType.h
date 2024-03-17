@@ -167,6 +167,7 @@ void linkedListType<Type>::copyList(const linkedListType<Type> &otherList)
 
     if (first != NULL) // if the list is nonempty make it empty
         destroyList();
+
     if (otherList.first == NULL) // otherList is empty
     {
         first = NULL;
@@ -177,18 +178,22 @@ void linkedListType<Type>::copyList(const linkedListType<Type> &otherList)
     {
         current = otherList.first; // current points to the list to be copied
         count = otherList.count;
+
+        // Copy first node
         first = new nodeType<Type>;  // create the node
         first->info = current->info; // copy the info
         first->link = NULL;          // set the link field of the node to NULL
         last = first;                // make last point to the first node
         current = current->link;     // make current point to the next node
 
+        // Copy the remaining list
         while (current != NULL)
         {
             newNode = new nodeType<Type>;  // create a node
             newNode->info = current->info; // copy the info
             newNode->link = NULL;          // set the link of newNode to NULL
-            last->link = newNode;          // make last point to the actual last node
+            last->link = newNode;          // attach newNode after last
+            last = newNode;                // make last point to the actual last node
             current = current->link;       // make current point to the next node
         }
     }
