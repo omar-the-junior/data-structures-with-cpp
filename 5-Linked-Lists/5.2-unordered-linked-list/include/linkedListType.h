@@ -17,7 +17,10 @@ public:
     void print() const;
     int length() const;
     void destroyList();
+    // Function to return an iterator at the beginning of the linked list.Postcondition: Returns an iterator such that current is set to first.
     Type front() const;
+
+    // Function to return an iterator one element past the last element of the linked list. Postcondition: Returns an iterator such that current is set to NULL.
     Type back() const;
 
     // These are pure virtual functions, denoted by '= 0' at the end of the function declaration.
@@ -74,7 +77,6 @@ linkedListType<Type>::~linkedListType()
     destroyList();
 }
 
-// begin is O(1)
 template <class Type>
 bool linkedListType<Type>::isEmptyList() const
 {
@@ -143,6 +145,7 @@ Type linkedListType<Type>::back() const
 }
 
 // begin is O(1)
+// Function to return an iterator at the beginning of the linked list. Postcondition: Returns an iterator such that current is set to first.
 template <class Type>
 linkedListIterator<Type> linkedListType<Type>::begin()
 {
@@ -151,6 +154,7 @@ linkedListIterator<Type> linkedListType<Type>::begin()
 }
 
 // end is O(1)
+// Function to return an iterator one element past the last element of the linked list. Postcondition: Returns an iterator such that current is set to NULL.
 template <class Type>
 linkedListIterator<Type> linkedListType<Type>::end()
 {
