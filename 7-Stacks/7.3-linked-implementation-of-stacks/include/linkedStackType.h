@@ -20,7 +20,7 @@ public:
     Type top() const;
     void pop();
 
-    linkedStackType(int stackSize = 100);
+    linkedStackType();
     linkedStackType(const linkedStackType<Type> &otherStack);
     ~linkedStackType();
 
@@ -123,7 +123,7 @@ void linkedStackType<Type>::copyStack(const linkedStackType<Type> &otherStack)
 }
 
 template <class Type>
-linkedStackType<Type>::linkedStackType(int stackSize)
+linkedStackType<Type>::linkedStackType()
 {
     stackTop = NULL;
 }
